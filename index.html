@@ -1,0 +1,64 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holiday Cocktails</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 5px solid green;
+      }
+
+      .card {
+        flex: 0 0 300px;
+        height: 300px;
+        margin: 10px;
+        background-color: #8b0000;
+        color: #fff3e0;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+
+      .drink-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .drink-info {
+        font-size: medium;
+      }
+
+      h1 {
+        width: 100%;
+        background-color: #fff3e0;
+        color: #8b0000;
+        text-align: center;
+        padding: 10px;
+        font-size: 2rem;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="drinks.js"></script>
+  </head>
+  <body>
+    <h1>Holiday Cocktails & Mocktails</h1>
+    <p style="text-align: center">Hover for recipe, click for calories</p>
+    <div class="wrapper"></div>
+  </body>
+</html>
